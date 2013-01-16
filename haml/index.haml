@@ -1,2 +1,31 @@
-%h1
-  This is a test
+!!! 5
+
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "description", :content => "This is a website to outline The Headphone Rule"}
+    %title The Headphone Rule
+    %link{:rel => "stylesheet", :href => "assets/stylesheets/css/style.css"}
+    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700, 800"}
+  %body
+    #container
+      %header
+        %h1
+          The Headphone Rule
+        %div
+          %i.icon-headphones
+          
+      %section#one
+        %p
+          Headphones on? Please do not talk to me.
+        %p.rules
+          %ul
+            %li Ping me on IRC
+            %li Ping me on IM
+            %li Send me an email
+        %p
+          Thank you!
+
+      %section
+        :markdown
+          This is as written by [Reyhan Dhuny](http://reyhan.org). Your mileage may vary.

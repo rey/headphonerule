@@ -1,0 +1,22 @@
+body
+  font-family: $font-family
+  padding-top: $gutter-width
+  background-color: #f4f4f4
+  color: $black
+  #container
+    +container($total-columns, $break)
+    header
+      text-align: center
+      h1
+        font-weight: 800
+        font-size: $base-font-size*5
+        margin-bottom: $gutter-width/2
+      div
+        i
+          font-size: $base-font-size*20
+    section
+      p, li
+        margin-bottom: $gutter-width
+      ul
+        li
+          list-style-type: square
