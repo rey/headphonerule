@@ -3,6 +3,10 @@ The Headphone Rule
 
 Uses HAML and SASS because awesome although you could just probably edit `index.html` if that's how you roll. I'm not here to judge.
 
+# Example
+
+[rey.github.com/headphonerule](http://rey.github.com/headphonerule)
+
 # Dev
 
 1. `bundle install`
