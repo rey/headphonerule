@@ -1,4 +1,5 @@
 require "susy"
+require 'sassy-buttons'
 
 
 http_path = "/"
