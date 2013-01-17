@@ -25,6 +25,7 @@ body
         +adjust-font-size-to($base-font-size)
       p:last-child
         text-align: center
+        +trailer
       ul
         text-align: center
         li
@@ -32,6 +33,9 @@ body
           margin-right: $gutter-width
           a.button
             +sassy-button("flat", 10px, 19px, #e58b32)
+    footer
+      text-align: center
+      +adjust-font-size-to(12px)
 
 +at-breakpoint($break)
   body
