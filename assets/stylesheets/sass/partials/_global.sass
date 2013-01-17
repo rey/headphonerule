@@ -1,34 +1,31 @@
 body
   +establish-baseline
-  //+debug-vertical-alignment
   font-family: $font-family
-  //padding-top: $gutter-width
   background-color: #f4f4f4
   color: $black
   #container
     +container($total-columns, $break)
-    text-align: center
     a
       text-decoration: none
     header
       text-align: center
       h1
         font-weight: 800
-        margin-bottom: $gutter-width/3
         +adjust-font-size-to($base-font-size*1.5, $lines:2)
       div
         i
           +adjust-font-size-to($base-font-size * 10)
     section
       p:first-child
-        +leader
-        text-align: center
         font-weight: 700
-        +adjust-font-size-to($base-font-size * 1.25)
       p, li
-        +trailer($lines:1)
+        +leader
+        //line-height: $base-line-height
+        +adjust-font-size-to($base-font-size)
+      p:last-child
+        text-align: center
       ul
-        +leader($lines:2)
+        text-align: center
         li
           display: inline-block
           margin-right: $gutter-width
@@ -38,7 +35,8 @@ body
 +at-breakpoint($break)
   body
     #container
+      text-align: center
       header
         h1
-          +adjust-font-size-to($base-font-size*4, $lines:2)
-          +trailer($lines:0.5)
+          +adjust-font-size-to(50px)
+        
