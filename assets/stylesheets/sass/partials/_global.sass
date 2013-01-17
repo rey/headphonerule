@@ -1,22 +1,45 @@
 body
+  +establish-baseline
+  //+debug-vertical-alignment
   font-family: $font-family
-  padding-top: $gutter-width
+  //padding-top: $gutter-width
   background-color: #f4f4f4
   color: $black
   #container
     +container($total-columns, $break)
+    text-align: center
+    a
+      color: blue
     header
       text-align: center
       h1
         font-weight: 800
-        font-size: $base-font-size*5
         margin-bottom: $gutter-width/2
+        +adjust-font-size-to($base-font-size*1.5, $lines:2)
       div
         i
-          font-size: $base-font-size*20
+          +adjust-font-size-to($base-font-size * 10)
     section
+      p:first-child
+        +leader
+        text-align: center
       p, li
-        margin-bottom: $gutter-width
+        +trailer($lines:1)
       ul
         li
           list-style-type: square
+          display: inline-block
+          margin-right: $gutter-width
+          background-color: #fefefe
+          padding: $gutter-width
+    footer
+      +leader($lines:5)
+      text-align: center
+      +adjust-font-size-to($base-font-size * 0.75)
+
++at-breakpoint($break)
+  body
+    #container
+      header
+        h1
+          //font-size: 4em
